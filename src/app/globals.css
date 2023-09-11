@@ -1,7 +1,6 @@
 @font-face {
   font-family: "PFStardust";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/PFStardust.woff")
-    format("woff");
+  src: url("/fonts/PFStardust.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -103,13 +102,28 @@ body {
   margin: 0;
   width: 100dvw;
   height: 100dvh;
+  font-family: "PFStardust";
 }
 main {
   width: 100%;
-  height: calc(100% - 30px);
+  height: calc(100% - 80px);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+header {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 20px;
+  font-size: 1.2rem;
+  color: slategray;
+}
 footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
   height: 30px;
   font-size: 10px;
   text-align: right;
@@ -119,6 +133,7 @@ footer {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 ol,
@@ -142,6 +157,7 @@ textarea {
   box-sizing: border-box;
 }
 button {
+  cursor: pointer;
   background-color: transparent;
 }
 input[type="search"]::-webkit-search-cancel-button,
